@@ -22,6 +22,7 @@
 | 🔐 **Known Malware** | MD5 hash matching against malware hash database |
 
 ---
+Install Tkinter first then
 
 ## 🚀 Quick Start
 
@@ -44,7 +45,7 @@ python run.py --cli
 
 ## 📁 Project Structure
 
-Install Tkinter first then
+
 ```
 ThreatKill/
 ├── run.py                   # Main entry point (GUI + CLI)
